@@ -12,7 +12,7 @@ You can get current weather and 4 days forecast for your city (according to geol
 - Open a browser, navigate to `http://localhost:3000/` to see the app
 
 ## Live DEMO :
-add demo;
+[Demo](https://meteor-weather.herokuapp.com/)
 
 ## TODO List :
 - flexible geolocation
