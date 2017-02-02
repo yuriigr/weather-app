@@ -1,0 +1,51 @@
+body {
+  background: url('https://s6.postimg.org/42owqo6mp/cls_min.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  font-family: 'Cabin', sans-serif;
+  font-weight: 600;
+}
+
+/*current-styles*/
+.weather {
+  width: 50%;
+  margin-top: 5%;
+  color: #362d2d;
+  font-size: 20px;
+  border-radius: 10px;
+  background: rgba(182, 175, 212, 0.4);
+}
+
+/*forecast-styles*/
+.daily-info {
+  background: rgba(185, 194, 219, 0.3);
+  border-radius: 10px;
+}
+
+.forecast-info {
+  border-radius: 10px;
+  font-size: 18px;
+  background: rgba(185, 194, 219, 0.3);
+  margin: 5px;
+  width: 23.7%;
+}
+
+/*button-styles*/
+.get {
+  background: rgba(166, 166, 239, 0.6);
+  border: 1px solid #362d2d;
+  color: #362d2d;
+  height: 50px;
+  margin: 20px 0;
+  width: 150px;
+  font-size: 20px;
+}
+
+.get:hover, .get:active, .get:focus, .get:target, .get:active:focus{
+  background:rgba(203, 203, 244, 0.5);
+  border: #695e5e;
+  color: #695e5e;
+  border: 1px solid #695e5e;
+}

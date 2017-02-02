@@ -1,0 +1,98 @@
+<head>
+  <title>Meteor Weather</title>
+  <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+</head>
+
+<body>
+  {{> weather}}
+</body>
+
+<template name="weather">
+  <div class="weather container holder text-center">
+    <form class="form-inline">
+      <input type="submit" class="btn btn-primary get" value="Get weather!">
+    </form>
+    <!--current weather-->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="col-md-6 col-md-offset-3 daily-info">
+          <h2>{{currentWeather}}</h2>
+          <p>{{description}}</p>
+          <p>{{temperature}}</p>
+          <p>
+            {{#if icon}}
+              <img src="http://openweathermap.org/img/w/{{icon}}.png">
+            {{/if}}
+          </p>
+          <p>{{date}}</p>
+        </div>
+      </div>
+    </div>
+    <!--forecast weather-->
+    <div class="row">
+      <div class="col-md-12">
+        <h2>{{weatherForecast}}</h2>
+        <!--item_1-->
+        <div class="col-md-3 forecast-info">
+          <h4>{{forecast_date_1}}</h4>
+          <p>{{forecast_time_1}}</p>
+          {{#if weatherForecast}}
+            {{{faLogo}}} 
+          {{/if}}
+          <span>{{forecast_temperature_1}}</span>
+          <p>{{forecast_description_1}}</p>
+          <p>
+            {{#if icon}}
+              <img src="http://openweathermap.org/img/w/{{forecast_icon_1}}.png">
+            {{/if}}
+          </p>
+        </div>
+        <!--item_2-->
+        <div class="col-md-3 forecast-info">
+          <h4>{{forecast_date_2}}</h4>
+          <p>{{forecast_time_2}}</p>
+          {{#if weatherForecast}}
+            {{{faLogo}}} 
+          {{/if}}
+          <span>{{forecast_temperature_2}}</span>
+          <p>{{forecast_description_2}}</p>
+          <p>
+            {{#if icon}}
+              <img src="http://openweathermap.org/img/w/{{forecast_icon_2}}.png">
+            {{/if}}
+          </p>
+        </div>
+        <!--item_3-->
+        <div class="col-md-3 forecast-info">
+          <h4>{{forecast_date_3}}</h4>
+          <p>{{forecast_time_3}}</p>
+          {{#if weatherForecast}}
+            {{{faLogo}}} 
+          {{/if}}
+          <span>{{forecast_temperature_3}}</span>
+          <p>{{forecast_description_3}}</p>
+          <p>
+            {{#if icon}}
+              <img src="http://openweathermap.org/img/w/{{forecast_icon_3}}.png">
+            {{/if}}
+          </p>
+        </div>
+        <!--item_4-->
+        <div class="col-md-3 forecast-info">
+          <h4>{{forecast_date_4}}</h4>
+          <p>{{forecast_time_4}}</p>
+          {{#if weatherForecast}}
+            {{{faLogo}}} 
+          {{/if}}
+          <span>{{forecast_temperature_4}}</span>
+          <p>{{forecast_description_4}}</p>
+          <p>
+            {{#if icon}}
+              <img src="http://openweathermap.org/img/w/{{forecast_icon_4}}.png">
+            {{/if}}
+          </p>
+        </div>
+      </div> 
+    </div>
+  </div>
+</template> 
